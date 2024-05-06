@@ -8,7 +8,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "8a5ebc71d1b76f698e06929650cc305f
 "assets/AssetManifest.json": "1e2e80bcfb5dd109f4012c733936dc1e",
 "assets/assets/Icon.png": "9d50c1f0fed9ce43acef2832d978ccd0",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
-"assets/fonts/MaterialIcons-Regular.otf": "0061bf0bb6278d53eacf93611a94cf8e",
+"assets/fonts/MaterialIcons-Regular.otf": "1e4f3e3e5f6c0662d611a9629779cd57",
 "assets/NOTICES": "6f0909da0d969f1197564c34af65f7f7",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
@@ -31,7 +31,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "8a5ebc71d1b76f698e06929650cc305f
 "icons/Icon-maskable-512.png": "22b5c429169f86080d8a4c76791a4821",
 "index.html": "a257140f4acd9dd9e52bcb2de181f52a",
 "/": "a257140f4acd9dd9e52bcb2de181f52a",
-"main.dart.js": "02ae3390912eee257501d37a3dd39c52",
+"main.dart.js": "1b0be69b531217276e13b9a7ec94c110",
 "manifest.json": "41b99292d74844809fff1aa8acbdf033",
 "site.webmanifest": "053100cb84a50d2ae7f5492f7dd7f25e",
 "version.json": "644ef211afd91882dc3889d6e9bdcbae"};
