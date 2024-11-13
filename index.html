@@ -3,91 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataCon - DATACON App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Site Rosa</title>
     <style>
-        iframe {
-            width: 100%;
-            height: 600px; /* Ajuste conforme necessário */
+        /* Define o fundo rosa para o site */
+        body {
+            background-color: #ffccf9;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #ff99cc;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para a seção principal */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para o botão */
+        .btn {
+            background-color: #ff66b2;
+            color: #ffffff;
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #ff3399;
         }
     </style>
 </head>
 <body>
+
+    <!-- Cabeçalho do site -->
     <header>
-        <div class="container">
-           <img src="images/Icon.png" alt="DataCon Logo" class="logo">
-          <h1 class="h1">DataCon</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Funcionalidades</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="#app">App</a></li> <!-- Novo link para o app -->
-                </ul>
-            </nav>
-        </div>
+        <h1>Bem-vindo ao Site Rosa</h1>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>Bem-vindo ao DataCon</h1>
-            <p>O aplicativo DATACON que transforma seus dados em conhecimento.</p>
-            <a href="#download" class="btn">Baixar Agora</a>
-        </div>
-    </section>
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <p>Este é um exemplo de um site com um tema predominantemente rosa.</p>
+        <button class="btn">Clique Aqui</button>
+    </div>
 
-    <section id="features" class="container">
-        <h2>Funcionalidades do DataCon</h2>
-        <div class="feature-list">
-            <div class="feature-item">
-                <h3>Análise de Dados</h3>
-                <p>Transforme grandes volumes de dados em informações valiosas com nossa poderosa ferramenta de análise.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Relatórios Personalizados</h3>
-                <p>Crie relatórios personalizados que atendem às suas necessidades específicas.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Interface Intuitiva</h3>
-                <p>Navegue facilmente pelo aplicativo com uma interface amigável e responsiva.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="container">
-        <h2>Sobre o DataCon</h2>
-        <p>O DataCon é um aplicativo que visa facilitar a análise e interpretação de grandes volumes de dados. Com uma interface intuitiva e funcionalidades avançadas, o DataCon é a escolha ideal para profissionais que buscam eficiência e precisão em suas análises.</p>
-    </section>
-
-    <section id="app" class="container">
-        <h2>Experimente o DataCon</h2>
-        <iframe src="flutter/index.html" title="Aplicativo DataCon Flutter"></iframe>
-    </section>
-
-    <section id="download" class="container">
-        <h2>Baixar o DataCon</h2>
-        <p>Disponível para Android e iOS.</p>
-        <a href="#" class="btn">Baixar na Google Play</a>
-        <a href="#" class="btn">Baixar na App Store</a>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contato</h2>
-        <p>Tem alguma dúvida? Entre em contato conosco.</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 DataCon. Todos os direitos reservados.</p>
-        </div>
-    </footer>
 </body>
 </html>
