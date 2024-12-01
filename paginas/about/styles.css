@@ -1,207 +1,146 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background: #ffffff ;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    padding-top: 130px; 
-
 }
 
-.h1{
-font-size: 2.5em;
-height: 50px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-width: 100%;
-margin-top: 100px;
-margin-left: -20px;
-text-align: center;
-font-style: normal;
-}
 
+/* Cabeçalho */
 header {
-    background: rgba(255, 255, 255, 0.9); 
-    color: #030303;
-    padding: 20px 0;
-    height: 70px;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 1000; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Elevação */
-}
-
-header .logo {
-    margin-left: -140px;
-    width: 60px;
-    float: left;
-}
-
-header nav {
-    float: right;
-    height: 40%;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: auto;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 30px;
-}
-
-header nav ul li a {
-    color: #010102;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Estilo da Seção Hero */
-#hero {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 60px;
-   
-}
-
-.card {
-    background: linear-gradient(80deg, #ffffff, #e0c4fd); /* Degradê */
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    width: 90%;
-    max-width: 1200px;
-    margin-top: -50px;
+    background-color: white;
+    color: #4a4a8e; 
+    padding: 20px 40px;
     display: flex;
     align-items: center;
-}
-
-.card-content {
-    display: flex;
     justify-content: space-between;
-    width: 100%;
+    border-bottom: 2px solid #ccc;
 }
 
-.text {
-    flex: 1;
-    padding-right: 20px;
-    margin-left: 20px;
-}
-
-.text h1 {
-    font-size: 2.5rem;
-    color: #4a4a4a;
-    margin-bottom: 10px;
-    margin-left: 2px;
-}
-
-.text p {
-    font-size: 1.2rem;
-    color: #7a7a7a;
-    line-height: 1.6;
-    text-align: start;
-}
-
-.image {
-    flex: 1; 
+.logo {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.image img {
-    max-width: 100%; 
-    border-radius: 15px;
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
 }
-.texto {
-    width: 80%;
-    margin: 0 auto;
-    margin-right: 40px;
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
 }
-/* Estilo da Seção Features */
-.feature-icon{
-    width: 60px;
-    float: left;
+
+h1.feature-h1, h2 {
+    margin: 30px 0; 
+    padding: 0;
+    font-size: 1.8rem;
+    color: #4a4a8e;
 }
+
+.feature-h1 {
+    margin-left: 40px;
+
+#impacto .feature-h1 {
+    margin-left: 40px;
+}
+
+#beneficios .feature-h1 {
+    margin-left: 40px;
+}
+
 .feature-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 40px;
 }
 
 .feature-item {
-    margin-left: 35px;
+    background: linear-gradient(80deg, #ffffff, #e0c4fd);
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 10px;
+    padding: 20px;
     width: 30%;
-    height: 25;    
-    padding: 15px;
-    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .feature-item h3 {
-
-    margin-top: 0%;
-    margin-left: 80px;
-}
-
-.feature-p{
-    font-size: 1.0rem;
-    text-align: start;
-    margin-left: 80px;
-    max-width: 65%;
-}
-
-.feature-h1{
-   font-size: 2.5em;
-    margin-left: 80px;
     margin-top: 0;
-    margin-bottom: 0;
-}
-
-section {
-    padding: 20px;
-    margin-left: 90px;
-    margin-right: 80px;
-    padding: 60px 0;
-}
-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 20;
-}
-section h1{
-    text-align: start;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    color: #4a4a8e;
+    margin-bottom: 10px;
 }
 
 
-/* Estilo do Formulário de Contato */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.feature-p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+p, .feature-p {
+    text-align: justify;
+}
+
+.card {
+    background: linear-gradient(80deg, #ffffff, #e0c4fd);
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 30px 40px;
 }
 
-form button {
+
+.card-content .text {
+    padding: 10px;
+}
+
+.btn {
+    background-color: #6a11cb;
+    color: white;
     padding: 10px 20px;
-    background: #00aaff;
-    color: #fff;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 5px;
 }
 
-/* Estilo do Rodapé */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+
+.btn:hover {
+    background-color: #4a4a8e;
 }
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 40px; 
+}
+
+#team-section {
+    margin: 40px 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#team-section h2 {
+    font-size: 1.5rem;
+    color: #4a4a8e;
+}
+
+h1.feature-h1, h2 {
+    margin: 30px 40px 30px 40px;
+    padding: 0;
+    font-size: 1.8rem;
+    color: #4a4a8e;
+}
+
+
