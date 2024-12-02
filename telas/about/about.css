@@ -5,23 +5,21 @@ body {
     padding: 0;
 }
 
-
-/* Cabeçalho */
 header {
-    background-color: white;
+    background-color: white; 
     color: #4a4a8e; 
-    padding: 20px 40px;
+    padding: 20px 40px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid #ccc;
 }
 
+
 .logo {
     display: flex;
     align-items: center;
 }
-
 
 .logo h1 {
     margin: 0;
@@ -31,7 +29,7 @@ header {
 .logo-img {
     width: 50px;
     height: 50px;
-    margin-left: 15px;
+    margin-left: 15px; /* Espaço logo e "DataCon" */
 }
 
 h1.feature-h1, h2 {
@@ -41,28 +39,29 @@ h1.feature-h1, h2 {
     color: #4a4a8e;
 }
 
+
 .feature-h1 {
-    margin-left: 40px;
+    margin-left: 40px; 
 }
 
 #impacto .feature-h1 {
-    margin-left: 40px;
+    margin-left: 40px; 
 }
 
 #beneficios .feature-h1 {
-    margin-left: 40px;
+    margin-left: 40px; 
 }
 
 .feature-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 30px 40px;
+    margin: 30px 40px; 
 }
 
 .feature-item {
-    background: linear-gradient(80deg, #ffffff, #e0c4fd);
-    border: 1px solid #ccc; /* Borda sutil */
+    background: linear-gradient(80deg, #ffffff, #e0c4fd); 
+    border: 1px solid #ccc; 
     border-radius: 10px;
     padding: 20px;
     width: 30%;
@@ -74,10 +73,9 @@ h1.feature-h1, h2 {
 .feature-item h3 {
     margin-top: 0;
     font-size: 1.2rem;
-    color: #4a4a8e;
+    color: #4a4a8e; 
     margin-bottom: 10px;
 }
-
 
 .feature-p {
     font-size: 1rem;
@@ -90,14 +88,13 @@ p, .feature-p {
 }
 
 .card {
-    background: linear-gradient(80deg, #ffffff, #e0c4fd);
+    background: linear-gradient(80deg, #ffffff, #e0c4fd); 
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 30px 40px;
 }
-
 
 .card-content .text {
     padding: 10px;
@@ -112,11 +109,9 @@ p, .feature-p {
     margin: 10px 5px;
 }
 
-
 .btn:hover {
     background-color: #4a4a8e;
 }
-
 
 .container {
     padding: 20px;
@@ -138,7 +133,7 @@ p, .feature-p {
 }
 
 h1.feature-h1, h2 {
-    margin: 30px 40px 30px 40px;
+    margin: 30px 40px 30px 40px; 
     padding: 0;
     font-size: 1.8rem;
     color: #4a4a8e;
