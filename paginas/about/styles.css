@@ -144,9 +144,8 @@ h1.feature-h1, h2 {
     color: #4a4a8e;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+footer, footer p {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 20px 0;
 }
