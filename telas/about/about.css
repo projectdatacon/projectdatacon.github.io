@@ -139,8 +139,11 @@ h1.feature-h1, h2 {
     color: #4a4a8e;
 }
 
-footer, footer p {
-    margin: 0;
-    padding: 0;
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
+
