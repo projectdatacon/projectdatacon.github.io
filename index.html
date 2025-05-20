@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataCon - DataCon App</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataCon - App de Análise de Dados Qualitativos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <div class="texto">
-           <img src="images/Icon.png" alt="DataCon Logo" class="logo">
-          <hi class="h1">DataCon</hi>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="/paginas/about/about.html">Sobre</a></li>
-                    <li><a href="/paginas/download/download.html">Baixar</a></li>
-                    <li><a href="paginas/tutorial/tutorial.html">Aprender</a></li>
-                    <li><a href="flutter/index.html">Usar</a></li>
-
-                </ul>
-            </nav>
+        <div class="logo-container">
+            <img src="imagens/Icon-removebg-preview.png" alt="Logo DataCon" />
+            <h1>DataCon</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="#" id="openModalBtn">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="hero">
-        <div class="card">
-            <div class="card-content">
-                <div class="text">
-                    <h1> DataCon -  Software para análise de dados qualitativos</h1>
-                    <p>O aplicativo DataCon transforma seus dados em conhecimento de forma simples e intuitiva. 
-                    Com uma interface amigável e ferramentas poderosas, o DataCon permite que você organize, analise e visualize suas informações de maneira eficiente. </p>
-                </div>
-                <div class="image">
-                    <img src="images/site_datacon-removebg-preview.png" alt="Imagem do DataCon">
-                </div>
+    <section id="hero" class="hero">
+        <h2>Plataforma de Análise de Dados Qualitativos</h2>
+        <p>O DataCon é um aplicativo que permite a análise e categorização de dados qualitativos de forma prática e
+            intuitiva.</p>
+        <div class="buttons">
+            <a href="#">Baixar na Google Play</a>
+            <a href="#">Baixar na App Store</a>
+        </div>
+    </section>
+
+    <!-- Seção duplicada comentada -->
+    <!--
+    <section class="features">
+        <h2>Recursos</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Análise Intuitiva</h3>
+                <p>Interface simples e fácil de usar</p>
             </div>
         </div>
     </section>
-    
+    -->
 
-    <section id="features" class="container">
-        <h1 class="feature-h1">Features</h1>
-        <div class="feature-list">
-            <div class="feature-item">
-                <img src="https://assets.onecompiler.app/42qmc3z2r/42r4jmajj/data-analysis_icon.png" alt="DataCon Logo" class="feature-icon">
+    <section id="features" class="features-section">
+        <h2 class="section-title">Principais Funcionalidades</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="imagens/lupa.png" alt="Análise de Dados" class="feature-icon">
                 <h3>Análise de Dados</h3>
-                <p class="feature-p">Transforme grandes volumes de dados em informações valiosas com nossa poderosa ferramenta de análise.</p>
+                <p>Transforme grandes volumes de dados em informações valiosas com nossa poderosa ferramenta de análise.
+                </p>
             </div>
-            <div class="feature-item">
-                <img src="images/aceitar.png" alt="DataCon Logo" class="feature-icon">
+            <div class="feature-card">
+                <img src="imagens/pasta.png" alt="Guia de Artigo" class="feature-icon">
                 <h3>Guia de Artigo</h3>
-                <p class="feature-p">Facilite a confecção de artigos científcos, analisando e filtrando dados com praticidade.</p>
+                <p>Facilite a confecção de artigos científicos, analisando e filtrando dados com praticidade.</p>
             </div>
-            <div class="feature-item">
-                <img src="images/interface.png" alt="DataCon Logo" class="feature-icon">
+            <div class="feature-card">
+                <img src="imagens/interface.png" alt="Interface Intuitiva" class="feature-icon">
                 <h3>Interface Intuitiva</h3>
-                <p class="feature-p">Navegue facilmente pelo aplicativo com uma interface amigável e responsiva.</p>
+                <p>Navegue facilmente pelo aplicativo com uma interface amigável e acessível.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h2>Sobre o DataCon</h2>
-        <p>O DataCon é um aplicativo que visa facilitar a análise e interpretação de grandes volumes de dados. Com uma interface intuitiva e funcionalidades avançadas, o DataCon é a escolha ideal para profissionais que buscam eficiência e precisão em suas análises.</p>
-    </section>
-
-    <section id="download" class="container">
-        <h2>Baixar o DataCon</h2>
-        <p>Disponível para Android e iOS.</p>
-        <a href="#" class="btn">Baixar na Google Play</a>
-        <a href="#" class="btn">Baixar na App Store</a>
-    </section>
-
-    <section id="contact" class="text">
-        <h2>Contato</h2>
-        <p>Tem alguma dúvida? Entre em contato conosco.</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
-    </section>
+    <!-- Modal Sobre -->
+    <div id="sobreModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Sobre o DataCon</h2>
+            <p>O DataCon é um aplicativo que visa facilitar a análise e interpretação de grandes volumes de dados.
+                Com uma interface intuitiva e funcionalidades avançadas, o DataCon é a escolha ideal para
+                profissionais que buscam eficiência e precisão em suas análises.</p>
+        </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 DataCon. Todos os direitos reservados.</p>
-        </div>
+        &copy; 2025 DataCon. Todos os direitos reservados.
     </footer>
+
+    <!-- Script para modal -->
+    <script>
+        document.getElementById("openModalBtn").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("sobreModal").style.display = "block";
+        });
+
+        document.getElementById("closeModalBtn").addEventListener("click", function () {
+            document.getElementById("sobreModal").style.display = "none";
+        });
+
+        window.addEventListener("click", function (e) {
+            if (e.target == document.getElementById("sobreModal")) {
+                document.getElementById("sobreModal").style.display = "none";
+            }
+        });
+    </script>
 </body>
+
 </html>
