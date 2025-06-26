@@ -4,103 +4,520 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DataCon - App de Análise de Dados Qualitativos</title>
+    <title>DataCon - Plataforma Profissional de Análise de Dados Qualitativos</title>
+    <meta name="description"
+        content="Transforme dados qualitativos em insights poderosos com a plataforma DataCon. Análise avançada, IA integrada e ferramentas profissionais para pesquisadores.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="imagens/Icon-removebg-preview.ico">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="imagens/Icon-removebg-preview.png" alt="Logo DataCon" />
-            <h1>DataCon</h1>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="imagens/Icon-removebg-preview.png" alt="Logo DataCon" class="logo-img" />
+                <h1 class="logo-text">DataCon</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+                    <li><a href="#pricing-section" class="nav-link">Preços</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                    <li><a href="#" class="btn btn-primary nav-cta">Começar Grátis</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#features">Funcionalidades</a></li>
-                <li><a href="#" id="openModalBtn">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="hero" class="hero">
-        <h2>Plataforma de Análise de Dados Qualitativos</h2>
-        <p>O DataCon é um aplicativo que permite a análise e categorização de dados qualitativos de forma prática e
-            intuitiva.</p>
-        <div class="buttons">
-            <a href="#">Baixar na Google Play</a>
-            <a href="#">Baixar na App Store</a>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Mais de 5.000 pesquisadores confiam no DataCon</span>
+                </div>
 
-    <!-- Seção duplicada comentada -->
-    <!--
-    <section class="features">
-        <h2>Recursos</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <h3>Análise Intuitiva</h3>
-                <p>Interface simples e fácil de usar</p>
+                <h1 class="hero-title">
+                    Revolucione sua <span class="gradient-text">Análise de Dados</span> Qualitativos
+                </h1>
+
+                <p class="hero-description">
+                    Plataforma completa para transformar entrevistas, documentos e pesquisas em insights estratégicos.
+                    Categorização inteligente, visualização avançada e IA integrada para maximizar sua produtividade.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Explorar Plataforma
+                        <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn btn-outline btn-large">
+                        Ver Demonstração
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Ferramentas<br>Avançadas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">97%</span>
+                        <span class="stat-label">Taxa de<br>Satisfação</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4x</span>
+                        <span class="stat-label">Aumento de<br>Produtividade</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="platform-preview">
+                    <img src="imagens/Logo_DataCon.png" alt="Interface da Plataforma DataCon" class="preview-image">
+                    <div class="preview-overlay"></div>
+                </div>
+
+                <div class="floating-cards">
+                    <div class="floating-card card-analytics">
+                        <div class="card-icon">📊</div>
+                        <div class="card-content">
+                            <h4>Análise em Tempo Real</h4>
+                            <p>Processando 1.247 dados</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-ai">
+                        <div class="card-icon">🤖</div>
+                        <div class="card-content">
+                            <h4>IA Integrada</h4>
+                            <p>95% de precisão</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    -->
 
+    <!-- Features Section -->
     <section id="features" class="features-section">
-        <h2 class="section-title">Principais Funcionalidades</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <img src="imagens/lupa.png" alt="Análise de Dados" class="feature-icon">
-                <h3>Análise de Dados</h3>
-                <p>Transforme grandes volumes de dados em informações valiosas com nossa poderosa ferramenta de análise.
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Funcionalidades Profissionais</h2>
+                <p class="section-subtitle">
+                    Ferramentas avançadas para análise de dados qualitativos que aceleram sua pesquisa
                 </p>
             </div>
-            <div class="feature-card">
-                <img src="imagens/pasta.png" alt="Guia de Artigo" class="feature-icon">
-                <h3>Guia de Artigo</h3>
-                <p>Facilite a confecção de artigos científicos, analisando e filtrando dados com praticidade.</p>
-            </div>
-            <div class="feature-card">
-                <img src="imagens/interface.png" alt="Interface Intuitiva" class="feature-icon">
-                <h3>Interface Intuitiva</h3>
-                <p>Navegue facilmente pelo aplicativo com uma interface amigável e acessível.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="imagens/lupa.png" alt="Análise Avançada" />
+                    </div>
+                    <h3 class="feature-title">Análise Inteligente</h3>
+                    <p class="feature-description">
+                        Algoritmos de IA para identificar padrões, sentimentos e categorias automaticamente em grandes
+                        volumes de dados.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Processamento automático de texto</li>
+                        <li>Análise de sentimentos avançada</li>
+                        <li>Detecção de padrões ocultos</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="imagens/pasta.png" alt="Organização" />
+                    </div>
+                    <h3 class="feature-title">Organização Profissional</h3>
+                    <p class="feature-description">
+                        Sistema completo de categorização e etiquetagem para organizar seus dados de forma estruturada e
+                        eficiente.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Categorização hierárquica</li>
+                        <li>Sistema de tags inteligente</li>
+                        <li>Filtros avançados de busca</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="imagens/interface.png" alt="Interface" />
+                    </div>
+                    <h3 class="feature-title">Interface Intuitiva</h3>
+                    <p class="feature-description">
+                        Design moderno e workflow otimizado que permite focar no que realmente importa: seus insights.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Dashboard personalizado</li>
+                        <li>Visualizações interativas</li>
+                        <li>Exportação em múltiplos formatos</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal Sobre -->
-    <div id="sobreModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModalBtn">&times;</span>
-            <h2>Sobre o DataCon</h2>
-            <p>O DataCon é um aplicativo que visa facilitar a análise e interpretação de grandes volumes de dados.
-                Com uma interface intuitiva e funcionalidades avançadas, o DataCon é a escolha ideal para
-                profissionais que buscam eficiência e precisão em suas análises.</p>
-        </div>
-    </div>
+    <!-- Platform Preview Section -->
+    <section class="platform-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Veja a Plataforma em Ação</h2>
+                <p class="section-subtitle">
+                    Interface profissional desenvolvida para pesquisadores exigentes
+                </p>
+            </div>
 
-    <footer>
-        &copy; 2025 DataCon. Todos os direitos reservados.
+            <div class="platform-showcase">
+                <div class="showcase-controls">
+                    <button class="control-btn active" data-screen="analysis">Análise</button>
+                    <button class="control-btn" data-screen="visualization">Visualização</button>
+                    <button class="control-btn" data-screen="export">Exportação</button>
+                </div>
+
+                <div class="showcase-screen">
+                    <img src="imagens/imagem_2 (1).png" alt="Tela de Análise" class="screen-image active"
+                        data-screen="analysis">
+                    <img src="imagens/img_1 .png" alt="Tela de Visualização" class="screen-image"
+                        data-screen="visualization">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing-section" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planos Profissionais</h2>
+                <p class="section-subtitle">
+                    Comece gratuitamente e evolua conforme sua necessidade
+                </p>
+
+                <div class="pricing-toggle">
+                    <span class="toggle-label">Mensal</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label">
+                        Anual <span class="discount-badge">-30%</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plano Gratuito -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="plan-name">Estudante</h3>
+                        <p class="plan-description">Ideal para estudantes e primeiros projetos</p>
+                        <div class="plan-price">
+                            <span class="price monthly-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">0</span>
+                            </span>
+                            <span class="price annual-price hidden">
+                                <span class="currency">R$</span>
+                                <span class="amount">0</span>
+                            </span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+
+                    <div class="card-features">
+                        <ul>
+                            <li><span class="check-icon">✓</span> Até 100 registros de dados</li>
+                            <li><span class="check-icon">✓</span> 1 projeto ativo</li>
+                            <li><span class="check-icon">✓</span> Ferramentas básicas de análise</li>
+                            <li><span class="check-icon">✓</span> Codificação manual</li>
+                            <li><span class="check-icon">✓</span> Exportação básica (PDF)</li>
+                            <li><span class="check-icon">✓</span> Suporte via FAQ</li>
+                            <li><span class="check-icon">✓</span> 1GB de armazenamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-outline btn-full">Começar Gratuitamente</button>
+                        <p class="trial-note">Para sempre grátis</p>
+                    </div>
+                </div>
+
+                <!-- Plano Profissional -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="card-header">
+                        <h3 class="plan-name">Profissional</h3>
+                        <p class="plan-description">Para pesquisadores e acadêmicos avançados</p>
+                        <div class="plan-price">
+                            <span class="price monthly-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/mês</span>
+                            </span>
+                            <span class="price annual-price hidden">
+                                <span class="currency">R$</span>
+                                <span class="amount">408</span>
+                                <span class="period">/ano</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card-features">
+                        <ul>
+                            <li><span class="check-icon">✓</span> Dados ilimitados</li>
+                            <li><span class="check-icon">✓</span> 10 projetos simultâneos</li>
+                            <li><span class="check-icon">✓</span> IA avançada para análise</li>
+                            <li><span class="check-icon">✓</span> Análise de sentimentos</li>
+                            <li><span class="check-icon">✓</span> Codificação automática</li>
+                            <li><span class="check-icon">✓</span> Visualizações interativas</li>
+                            <li><span class="check-icon">✓</span> Exportação múltiplos formatos</li>
+                            <li><span class="check-icon">✓</span> Suporte prioritário por email</li>
+                            <li><span class="check-icon">✓</span> 20GB de armazenamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-full">Começar Teste Grátis</button>
+                        <p class="trial-note">14 dias grátis • Sem cartão necessário</p>
+                    </div>
+                </div>
+
+                <!-- Plano Empresarial -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="plan-name">Empresarial</h3>
+                        <p class="plan-description">Para equipes e instituições de pesquisa</p>
+                        <div class="plan-price">
+                            <span class="price monthly-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">129</span>
+                                <span class="period">/usuário/mês</span>
+                            </span>
+                            <span class="price annual-price hidden">
+                                <span class="currency">R$</span>
+                                <span class="amount">1.080</span>
+                                <span class="period">/usuário/ano</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card-features">
+                        <ul>
+                            <li><span class="check-icon">✓</span> Usuários ilimitados</li>
+                            <li><span class="check-icon">✓</span> Projetos ilimitados</li>
+                            <li><span class="check-icon">✓</span> Colaboração em tempo real</li>
+                            <li><span class="check-icon">✓</span> IA personalizada</li>
+                            <li><span class="check-icon">✓</span> Controle de acesso avançado</li>
+                            <li><span class="check-icon">✓</span> API para integrações</li>
+                            <li><span class="check-icon">✓</span> SSO e segurança enterprise</li>
+                            <li><span class="check-icon">✓</span> Suporte dedicado 24/7</li>
+                            <li><span class="check-icon">✓</span> Armazenamento ilimitado</li>
+                            <li><span class="check-icon">✓</span> Treinamento personalizado</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-outline btn-full">Falar com Vendas</button>
+                        <p class="trial-note">Demonstração personalizada</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre o DataCon</h2>
+                    <p class="about-description">
+                        O DataCon nasceu da necessidade de democratizar o acesso a ferramentas profissionais de análise
+                        de dados qualitativos. Nossa plataforma combina tecnologia de ponta com interface intuitiva,
+                        permitindo que pesquisadores de todos os níveis extraiam insights valiosos de seus dados.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">2021</span>
+                            <span class="highlight-text">Fundação da empresa</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">5.000+</span>
+                            <span class="highlight-text">Pesquisadores ativos</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">15+</span>
+                            <span class="highlight-text">Países atendidos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="team-grid">
+                        <div class="value-card">
+                            <h4>Inovação</h4>
+                            <p>Tecnologia de ponta para análise de dados</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Simplicidade</h4>
+                            <p>Interface intuitiva e fácil de usar</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Confiabilidade</h4>
+                            <p>Resultados precisos e seguros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Pronto para revolucionar sua análise de dados? Fale conosco
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@datacon.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h4>Chat Online</h4>
+                            <p>Disponível 24/7 para planos Pro</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Suporte</h4>
+                            <p>Central de ajuda e documentação</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Tipo de consulta</option>
+                                <option value="demo">Solicitar demonstração</option>
+                                <option value="pricing">Informações sobre preços</option>
+                                <option value="support">Suporte técnico</option>
+                                <option value="partnership">Parcerias</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <img src="imagens/Icon-removebg-preview.png" alt="Logo DataCon" class="logo-img" />
+                        <span class="logo-text">DataCon</span>
+                    </div>
+                    <p class="footer-description">
+                        Plataforma profissional para análise de dados qualitativos.
+                        Transforme dados em insights com tecnologia de ponta.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#features">Funcionalidades</a></li>
+                            <li><a href="#pricing-section">Preços</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataCon. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">📧</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="GitHub">💻</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Script para modal -->
-    <script>
-        document.getElementById("openModalBtn").addEventListener("click", function (e) {
-            e.preventDefault();
-            document.getElementById("sobreModal").style.display = "block";
-        });
-
-        document.getElementById("closeModalBtn").addEventListener("click", function () {
-            document.getElementById("sobreModal").style.display = "none";
-        });
-
-        window.addEventListener("click", function (e) {
-            if (e.target == document.getElementById("sobreModal")) {
-                document.getElementById("sobreModal").style.display = "none";
-            }
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>
